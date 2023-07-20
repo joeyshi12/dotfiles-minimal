@@ -15,10 +15,17 @@ alias dst='docker stop'
 alias drm='docker rm'
 alias da='docker attach'
 alias dlg='docker logs'
+alias dv='docker volume'
 
 dsh() {
     docker exec -it $1 '/bin/sh'
 }
+
+# Tmux
+alias t="tmux"
+alias ta="tmux attach-session"
+alias tl="tmux list-sessions"
+alias tk="tmux kill-session"
 
 # Git
 alias g="git" 
