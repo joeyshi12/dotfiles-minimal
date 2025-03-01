@@ -11,12 +11,14 @@ alias dpsa='docker ps -a'
 alias di='docker image'
 alias dirm='docker image ls'
 alias dirm='docker image rm'
+alias dn='docker network'
 alias dr='docker container run'
 alias dst='docker container start'
 alias drs='docker container restart'
 alias dstp='docker container stop'
 alias dstpa='docker stop $(docker ps -q)'
 alias drm='docker container rm'
+alias drma='docker container rm $(docker ps -aq)'
 alias dbl='docker build'
 alias dlg='docker logs'
 alias dv='docker volume'
@@ -26,10 +28,10 @@ dsh() {
 }
 
 # Tmux
-alias t="tmux"
-alias ta="tmux attach-session"
-alias tl="tmux list-sessions"
-alias tk="tmux kill-session"
+alias tm="tmux"
+alias tma="tmux attach-session"
+alias tml="tmux list-sessions"
+alias tmk="tmux kill-session"
 
 # Git
 alias g="git" 
