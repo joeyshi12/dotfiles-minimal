@@ -56,6 +56,6 @@ alias gr="git remote"
 lf() {
     [ ! -d ~/.cache/lf ] && mkdir -p ~/.cache/lf
     local target=~/.cache/lf/lfdir
-    ~/.local/bin/lf -last-dir-path $target
+    /bin/lf -last-dir-path $target
     cd "$(cat $target)"
 }
